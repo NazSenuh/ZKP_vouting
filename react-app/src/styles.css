@@ -88,3 +88,43 @@ input:focus, select:focus {
 .voting-form button:hover {
     background-color: #2563eb;
 }
+
+.results-page {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.results {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #374151;
+}
+
+.error {
+    color: red;
+    margin-top: 1rem;
+}
+
+.nav-links {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: blue;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: blue;
+    color: white;
+}

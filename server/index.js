@@ -2,9 +2,11 @@ const { groth16 } = require('snarkjs');
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
+const cors = require('cors');
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 const vkey = JSON.parse(fs.readFileSync('../circuits/verification_key.json'));
 
@@ -60,6 +62,18 @@ app.post('/verify', async (req, res) => {
     } catch (error) {
         console.error('Verification error:', error);
         res.status(500).json({ error: 'Verification failed', details: error.message });
+    }
+});
+
+app.get('/results', (req, res) => {
+    try {
+        const voters = JSON.parse(fs.readFileSync('../voters.json', 'utf8'));
+        const option0 = voters.filter(voter => voter.vote === 0).length;
+        const option1 = voters.filter(voter => voter.vote === 1).length;
+        res.json({ option0, option1 });
+    } catch (error) {
+        console.error('Error reading voters.json:', error.message);
+        res.status(500).json({ error: 'Failed to calculate results' });
     }
 });
 

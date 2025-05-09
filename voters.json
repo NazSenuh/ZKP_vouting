@@ -37,6 +37,6 @@
   {
     "id": 7,
     "identitySecret": "456789",
-    "vote": null
+    "vote": 1
   }
 ]

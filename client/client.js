@@ -104,7 +104,6 @@ async function generateProof(input) {
         signalHash: BigInt(input.signalHash || '789').toString()
     };
 
-    console.log('Circuit inputs:', fullInput); // Debug inputs
 
     const wasmPath = path.join(__dirname, '..', 'circuits', 'circuit_js', 'circuit_js', 'circuit.wasm');
     const zkeyPath = path.join(__dirname, '..', 'circuits', 'circuit_js', 'circuit_js', 'circuit_final.zkey');
