@@ -1,0 +1,30 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Circuit compiled files (binary and temporary files)
+circuits/circuit.r1cs
+circuits/circuit.sym
+circuits/circuit.wasm
+circuits/circuit_0000.zkey
+circuits/circuit_final.zkey
+circuits/circuit_js/circuit.wasm
+circuits/circuit_js/circuit_final.zkey
+circuits/verification_key.json
+circuits/powersOfTau28_hez_final_20.ptau
+
+# Generated proof files
+proof.json
+public.json
+
+# Server-side nullifiers
+server/nullifiers.json
+
+# Logs and temporary files
+*.log
+.DS_Store
+
+# Build artifacts
+dist/
+build/

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 0,
+    "identitySecret": "123456",
+    "vote": 0
+  },
+  {
+    "id": 1,
+    "identitySecret": "789012",
+    "vote": 1
+  },
+  {
+    "id": 2,
+    "identitySecret": "345678",
+    "vote": null
+  },
+  {
+    "id": 3,
+    "identitySecret": "901234",
+    "vote": 1
+  },
+  {
+    "id": 4,
+    "identitySecret": "567890",
+    "vote": null
+  },
+  {
+    "id": 5,
+    "identitySecret": "234567",
+    "vote": null
+  },
+  {
+    "id": 6,
+    "identitySecret": "890123",
+    "vote": 1
+  },
+  {
+    "id": 7,
+    "identitySecret": "456789",
+    "vote": null
+  }
+]
